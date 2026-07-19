@@ -62,6 +62,7 @@
           <a class="button gold" href="#contact">Demander un devis</a>
           <a class="button ghost" href="#realisations">Explorer l'atelier</a>
         </div>
+
       </div>
       <div class="hero-index"><span id="slide-number">01</span><i></i><span>03</span></div>
       <a class="scroll-cue" href="#univers"><span></span>Découvrir</a>
@@ -82,6 +83,7 @@
         <h2 class="reveal">Un seul atelier.<br><em>Plusieurs univers.</em></h2>
         <p class="reveal">De la fabrication d'une pièce à la mise en lumière d'un événement, chaque service bénéficie de la même exigence.</p>
       </div>
+    
       <div class="service-list">
         <article class="service-row reveal">
           <span>01</span><h3>Impression 3D & fabrication</h3>
@@ -105,7 +107,8 @@
         </article>
       </div>
     </section>
-
+        
+  </div>
     <section class="feature feature-dark" id="finitions">
       <div class="feature-photo reveal"><img src="assets/images/armor.webp" alt="Pièce d'armure fabriquée par Italina Factory" loading="lazy"></div>
       <div class="feature-copy reveal">
@@ -120,35 +123,137 @@
       </div>
     </section>
 
-    <section class="gallery-section section" id="realisations">
-      <div class="gallery-heading">
-        <div>
-          <div class="section-label reveal">04 · Sélection</div>
-          <h2 class="reveal">Des créations<br><em>sans frontières.</em></h2>
-        </div>
-        <div class="filters reveal" role="group" aria-label="Filtrer la galerie">
-          <button class="active" data-filter="all">Tout</button>
-          <button data-filter="3d">Impression 3D</button>
-          <button data-filter="horns">Cornes</button>
-          <button data-filter="nfc">NFC</button>
-          <button data-filter="cosplay">Cosplay</button>
-        </div>
-      </div>
-      <div class="masonry">
-        <figure class="gallery-item tall reveal" data-category="3d"><img src="assets/images/bust.webp" alt="Buste imprimé et peint" loading="lazy"><figcaption><b>Création 3D</b><span>Peinture complète</span></figcaption></figure>
-        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/guitar.webp" alt="Guitare rouge imprimée en 3D" loading="lazy"><figcaption><b>Accessoire</b><span>Impression 3D</span></figcaption></figure>
-        <figure class="gallery-item reveal" data-category="horns"><img src="assets/images/horns-red.webp" alt="Cornes rouges personnalisées" loading="lazy"><figcaption><b>Vilainous</b><span>Cornes légères</span></figcaption></figure>
-        <figure class="gallery-item wide reveal" data-category="3d"><img src="assets/images/helmet-set.webp" alt="Casque et accessoires fantasy" loading="lazy"><figcaption><b>Set fantasy</b><span>Fabrication sur mesure</span></figcaption></figure>
-        <figure class="gallery-item tall reveal" data-category="cosplay"><img src="assets/images/cosplay-wolf.webp" alt="Cosplay louve fantasy" loading="lazy"><figcaption><b>Cosplay</b><span>Univers fantasy</span></figcaption></figure>
-        <figure class="gallery-item reveal" data-category="nfc"><img src="assets/images/nfc-products.webp" alt="Porte-clés NFC personnalisés" loading="lazy"><figcaption><b>NFC</b><span>Contact instantané</span></figcaption></figure>
-        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/purple-sword.webp" alt="Épée lumineuse violette" loading="lazy"><figcaption><b>Prop lumineux</b><span>Accessoire cosplay</span></figcaption></figure>
-        <figure class="gallery-item tall reveal" data-category="horns"><img src="assets/images/horns-model.webp" alt="Cornes portées par Sarah Italina" loading="lazy"><figcaption><b>Cornes</b><span>Port confortable</span></figcaption></figure>
-        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/deer.webp" alt="Figurine décorative de cerf" loading="lazy"><figcaption><b>Décoration</b><span>Peinture artisanale</span></figcaption></figure>
-        <figure class="gallery-item wide reveal" data-category="nfc"><img src="assets/images/nfc-phone.webp" alt="Utilisation d'un porte-clés NFC avec un téléphone" loading="lazy"><figcaption><b>NFC</b><span>Un geste, un lien</span></figcaption></figure>
-        <figure class="gallery-item reveal" data-category="cosplay"><img src="assets/images/cosplay-armor.webp" alt="Cosplay en armure" loading="lazy"><figcaption><b>Cosplay</b><span>Création & passion</span></figcaption></figure>
-        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/mask.webp" alt="Masque imprimé et peint" loading="lazy"><figcaption><b>Masque</b><span>Finition complète</span></figcaption></figure>
-      </div>
-    </section>
+<section class="gallery-section section" id="realisations">
+  <div class="gallery-heading">
+    <div>
+      <div class="section-label reveal">04 · Réalisations</div>
+      <h2 class="reveal">
+        Des projets uniques,<br>
+        <em>fabriqués avec passion.</em>
+      </h2>
+    </div>
+
+    <p class="gallery-intro reveal">
+      Impression 3D, accessoires cosplay, peinture, créations personnalisées
+      et objets connectés : découvrez une sélection de réalisations Italina Factory.
+    </p>
+  </div>
+
+  <div class="filters reveal" role="group" aria-label="Filtrer les réalisations">
+    <button class="active" data-filter="all">Tout</button>
+    <button data-filter="3d">Impression 3D</button>
+    <button data-filter="horns">Cornes</button>
+    <button data-filter="nfc">NFC</button>
+    <button data-filter="cosplay">Cosplay</button>
+  </div>
+
+  <div class="premium-gallery">
+
+    <figure class="gallery-card gallery-card-large reveal" data-category="3d">
+      <img
+        src="assets/images/bust.webp"
+        alt="Buste imprimé en 3D et peint à la main"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Impression 3D · Peinture</span>
+        <h3>Buste entièrement finalisé</h3>
+        <p>Préparation, ponçage, apprêt et peinture à la main.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card reveal" data-category="3d">
+      <img
+        src="assets/images/guitar.webp"
+        alt="Guitare rouge imprimée en 3D"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Accessoire cosplay</span>
+        <h3>Guitare personnalisée</h3>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card reveal" data-category="horns">
+      <img
+        src="assets/images/horns-red.webp"
+        alt="Cornes rouges Vilainous"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Collection Vilainous</span>
+        <h3>Cornes légères et confortables</h3>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card gallery-card-wide reveal" data-category="3d">
+      <img
+        src="assets/images/helmet-set.webp"
+        alt="Casque et accessoires fantasy fabriqués en 3D"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Fabrication sur demande</span>
+        <h3>Ensemble d’armure fantasy</h3>
+        <p>Plusieurs niveaux de finition selon le projet et le budget.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card gallery-card-tall reveal" data-category="cosplay">
+      <img
+        src="assets/images/cosplay-wolf.webp"
+        alt="Cosplay de louve fantasy"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Cosplay</span>
+        <h3>Univers fantasy</h3>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card reveal" data-category="nfc">
+      <img
+        src="assets/images/nfc-products.webp"
+        alt="Porte-clés NFC personnalisés"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Objet connecté</span>
+        <h3>Porte-clés NFC personnalisés</h3>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card reveal" data-category="3d">
+      <img
+        src="assets/images/purple-sword.webp"
+        alt="Épée lumineuse violette pour cosplay"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Accessoire cosplay</span>
+        <h3>Épée lumineuse</h3>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-card reveal" data-category="3d">
+      <img
+        src="assets/images/mask.webp"
+        alt="Masque imprimé en 3D et peint"
+        loading="lazy"
+      >
+      <figcaption>
+        <span>Finition complète</span>
+        <h3>Masque personnalisé</h3>
+      </figcaption>
+    </figure>
+
+  </div>
+
+  <div class="gallery-cta reveal">
+    <p>Vous avez une idée ou une référence à fabriquer ?</p>
+    <a class="button gold" href="#contact">Parler de mon projet</a>
+  </div>
+</section>
 
     <section class="nfc-section">
       <video autoplay muted loop playsinline poster="assets/images/nfc-products.webp">
@@ -163,22 +268,100 @@
       </div>
     </section>
 
-    <section class="sarah-section section" id="sarah">
-      <div class="sarah-collage reveal">
-        <img class="sarah-main" src="assets/images/sarah-blue.webp" alt="Sarah Italina présentant un événement" loading="lazy">
-        <img class="sarah-side" src="assets/images/hero-crowd.webp" alt="Sarah Italina devant un public" loading="lazy">
+ <section class="trust-section section" id="confiance">
+
+  <div class="trust-intro">
+    <div class="section-label reveal">07 · Présentation événementielle</div>
+
+    <div class="trust-heading">
+      <h2 class="reveal">
+        Donner vie à un événement,<br>
+        <em>ce n’est pas seulement tenir un micro.</em>
+      </h2>
+
+      <div class="trust-text reveal">
+        <p>
+          C’est créer du lien avec le public, rythmer chaque moment,
+          mettre en valeur les participants et transmettre l’énergie
+          qui rend un événement mémorable.
+        </p>
+
+        <p>
+          Depuis plusieurs années dans l’univers du cosplay et de la pop culture,
+          j’interviens en tant que présentatrice, animatrice et speaker.
+        </p>
       </div>
-      <div class="sarah-copy reveal">
-        <span class="section-label">06 · La fondatrice</span>
-        <h2>Sarah<br><em>Italina.</em></h2>
-        <p class="large">Cosplayeuse depuis plus de 15 ans, présentatrice événementielle et créatrice.</p>
-        <p>Son expérience de la scène et de la fabrication lui permet de comprendre aussi bien les contraintes techniques d'un projet que la manière de le présenter et de le faire vivre.</p>
-        <div class="sarah-links">
-          <a href="https://www.instagram.com/sarahitalina/" target="_blank" rel="noopener">@sarahitalina ↗</a>
-          <a href="mailto:italinafactory@gmail.com">italinafactory@gmail.com ↗</a>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+
+  <div class="event-services reveal">
+    <article>
+      <span>01</span>
+      <h3>Concours cosplay</h3>
+      <p>Présentation des participants, gestion des passages et échanges avec le jury.</p>
+    </article>
+
+    <article>
+      <span>02</span>
+      <h3>Animation de scène</h3>
+      <p>Défilés, cérémonies, jeux avec le public et programmation scénique.</p>
+    </article>
+
+    <article>
+      <span>03</span>
+      <h3>Interviews</h3>
+      <p>Échanges avec des invités, artistes, créateurs et professionnels.</p>
+    </article>
+
+    <article>
+      <span>04</span>
+      <h3>Événements pop culture</h3>
+      <p>Salons, conventions, gaming, manifestations associatives et événements privés.</p>
+    </article>
+  </div>
+
+  <div class="trusted-by reveal">
+    <div class="trusted-title">
+      <span>Ils m’ont fait confiance</span>
+      <p>
+        Chaque événement possède son identité. Mon rôle est de m’adapter
+        à son univers, à son public et à ses objectifs.
+      </p>
+    </div>
+
+    <div class="trusted-list">
+      <span>Made in Asia</span>
+      <span>Paris Manga</span>
+      <span>TGS</span>
+      <span>Game in Reims</span>
+      <span>XP Multiverse</span>
+      <span>Japan Mania</span>
+      <span>Riot Games</span>
+      <span>Japan Day</span>
+      <span>Disney Fan Day</span>
+      <span>Japan Pop Show</span>
+      <span>Magic Mania</span>
+      <span>Japan Manga Wave</span>
+      <span>Winter Geek Festival</span>
+      <span>Summer Geek Festival</span>
+    </div>
+  </div>
+
+  <div class="event-cta reveal">
+    <div>
+      <span class="section-label">Vous organisez un événement ?</span>
+      <h3>Créons ensemble une expérience dynamique et mémorable.</h3>
+    </div>
+
+    <a
+      class="button gold"
+      href="mailto:italinafactory@gmail.com?subject=Demande%20de%20présentation%20événementielle"
+    >
+      Me contacter
+    </a>
+  </div>
+
+</section>
 
 
     <section class="contact-section section" id="contact">
