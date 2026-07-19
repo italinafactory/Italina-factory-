@@ -1,142 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Italina Factory | Création, cosplay & événementiel</title>
-  <meta name="description" content="Italina Factory accompagne particuliers, artistes, exposants et organisateurs : impression 3D à la demande, accessoires cosplay, animation événementielle et développement de partenariats.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://italinafactory.fr/">
-  <meta property="og:title" content="Italina Factory | Création, cosplay & événementiel">
-  <meta property="og:description" content="Impression 3D, accessoires cosplay, présentation événementielle et accompagnement de talents.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Italina Factory | Impression 3D, cosplay & événementiel</title>
+  <meta name="description" content="Atelier créatif à Tourcoing : impression 3D sur demande, accessoires cosplay, créations personnalisées, porte-clés NFC, présentation et animation événementielle.">
+  <meta name="theme-color" content="#0a0908">
+  <meta property="og:title" content="Italina Factory — Donnez vie à vos projets">
+  <meta property="og:description" content="Impression 3D, cosplay, créations personnalisées et événementiel à Tourcoing.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://italinafactory.fr/">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css">
+  <meta property="og:image" content="https://italinafactory.fr/assets/images/hero-stage.webp">
+  <link rel="canonical" href="https://italinafactory.fr/">
+  <link rel="icon" href="assets/images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Italina Factory",
-    "url": "https://italinafactory.fr",
-    "email": "italinafactory@gmail.com",
-    "telephone": "+33638657868",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Tourcoing",
-      "postalCode": "59200",
-      "addressCountry": "FR"
-    },
-    "areaServed": "France",
-    "founder": {"@type": "Person", "name": "Sarah Dumont"}
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Italina Factory",
+    "url":"https://italinafactory.fr/",
+    "email":"italinafactory@gmail.com",
+    "address":{"@type":"PostalAddress","addressLocality":"Tourcoing","addressCountry":"FR"},
+    "sameAs":["https://www.instagram.com/italinafactory/","https://www.instagram.com/sarahitalina/"],
+    "description":"Atelier créatif spécialisé dans l'impression 3D, le cosplay, les créations personnalisées et l'animation événementielle."
   }
   </script>
 </head>
 <body>
-  <header class="site-header" id="accueil">
-    <div class="container nav-wrap">
-      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
-        <span class="brand-mark">IF</span>
-        <span><strong>ITALINA</strong><small>FACTORY</small></span>
-      </a>
-      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="#services">Services</a>
-        <a href="#apropos">À propos</a>
-        <a href="#realisations">Réalisations</a>
-        <a href="#contact" class="nav-cta">Demander un devis</a>
-      </nav>
-    </div>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="Italina Factory, accueil">
+      <img src="assets/images/logo.webp" alt="" width="54" height="54">
+      <span><b>ITALINA</b><small>FACTORY</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav">
+      <a href="#univers">L'univers</a>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#sarah">Sarah</a>
+      <a class="nav-contact" href="#contact">Votre projet</a>
+    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">CRÉATION · COSPLAY · ÉVÉNEMENTIEL</p>
-          <h1>Vos idées prennent forme.</h1>
-          <p class="hero-text">Italina Factory accompagne les particuliers, artistes, exposants, marques et organisateurs avec des solutions créatives, humaines et sur mesure.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact">Parler de votre projet</a>
-            <a class="button secondary" href="#services">Découvrir les services</a>
-          </div>
-          <div class="trust-row">
-            <span>✓ Devis personnalisé</span>
-            <span>✓ Fabrication à la demande</span>
-            <span>✓ Basée à Tourcoing</span>
-          </div>
+      <div class="hero-media">
+        <div class="hero-slide active" style="background-image:url('assets/images/hero-stage.webp')"></div>
+        <div class="hero-slide" style="background-image:url('assets/images/bust.webp')"></div>
+        <div class="hero-slide" style="background-image:url('assets/images/cosplay-wolf.webp')"></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="kicker reveal">Atelier créatif · Tourcoing</p>
+        <h1 class="reveal">Donnez vie<br><em>à vos projets.</em></h1>
+        <p class="lead reveal">Création 3D, cosplay, personnalisation et événementiel réunis dans un même univers.</p>
+        <div class="hero-actions reveal">
+          <a class="button gold" href="#contact">Demander un devis</a>
+          <a class="button ghost" href="#realisations">Explorer l'atelier</a>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orb orb-one"></div><div class="orb orb-two"></div>
-          <div class="hero-card card-main">
-            <span class="mini-label">ITALINA FACTORY</span>
-            <strong>Imaginer.<br>Créer.<br>Connecter.</strong>
-          </div>
-          <div class="hero-card card-small">Impression 3D</div>
-          <div class="hero-card card-small second">Événementiel</div>
+      </div>
+      <div class="hero-index"><span id="slide-number">01</span><i></i><span>03</span></div>
+      <a class="scroll-cue" href="#univers"><span></span>Découvrir</a>
+    </section>
+
+    <section class="manifesto section" id="univers">
+      <div class="section-label reveal">01 · L'univers</div>
+      <div class="manifesto-grid">
+        <h2 class="reveal">Plus qu'un objet.<br>Une création qui raconte <em>votre histoire.</em></h2>
+        <div class="manifesto-text reveal">
+          <p>Italina Factory imagine, fabrique et accompagne des projets qui sortent de l'ordinaire. Chaque demande est étudiée avec attention pour créer une pièce fidèle à votre intention.</p>
+          <p class="signature">Artisanat · Passion · Culture geek</p>
         </div>
+      </div>
+      <div class="stats reveal">
+        <div><strong data-count="15">0</strong><span>ans dans le cosplay</span></div>
+        <div><strong data-count="4">0</strong><span>niveaux de finition 3D</span></div>
+        <div><strong data-count="100">0</strong><span>% sur mesure</span></div>
       </div>
     </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <p class="eyebrow">CE QUE JE PROPOSE</p>
-        <h2>Des services pensés pour vos projets</h2>
-        <div class="services-grid">
-          <article class="service-card"><span class="icon">✦</span><h3>Impression 3D à la demande</h3><p>Impression à partir de vos fichiers : pièce brute, assemblée, préparée avant peinture ou entièrement peinte.</p><a href="#contact">Demander une estimation →</a></article>
-          <article class="service-card"><span class="icon">⚔</span><h3>Accessoires & cosplay</h3><p>Cornes, éléments d’armure, accessoires, réparations et petites séries pour cosplayeurs, associations et exposants.</p><a href="#contact">Présenter mon projet →</a></article>
-          <article class="service-card"><span class="icon">◎</span><h3>NFC & personnalisation</h3><p>Porte-clés NFC personnalisables pour partager instantanément vos réseaux, coordonnées, portfolio, paiement ou Wi-Fi.</p><a href="#contact">Commander →</a></article>
-          <article class="service-card"><span class="icon">◈</span><h3>Présentation événementielle</h3><p>Animation de scène, concours cosplay, catwalks, ateliers, interviews, jurys et accompagnement de programmation.</p><a href="#contact">Préparer un événement →</a></article>
-          <article class="service-card"><span class="icon">◇</span><h3>Agent & apport d’affaires</h3><p>Recherche de partenaires, mise en relation, négociation et représentation pour artistes, créateurs et entreprises.</p><a href="#contact">Échanger sur vos besoins →</a></article>
-          <article class="service-card"><span class="icon">✂</span><h3>Flocage & petites séries</h3><p>Personnalisation textile et création de supports en petites quantités pour événements, associations et projets créatifs.</p><a href="#contact">Obtenir un devis →</a></article>
-        </div>
+    <section class="services-section section" id="services">
+      <div class="section-label reveal">02 · Savoir-faire</div>
+      <div class="services-intro">
+        <h2 class="reveal">Un seul atelier.<br><em>Plusieurs univers.</em></h2>
+        <p class="reveal">De la fabrication d'une pièce à la mise en lumière d'un événement, chaque service bénéficie de la même exigence.</p>
+      </div>
+      <div class="service-list">
+        <article class="service-row reveal">
+          <span>01</span><h3>Impression 3D & fabrication</h3>
+          <p>Accessoires cosplay, décoration, goodies et pièces personnalisées.</p>
+          <a href="#realisations" aria-label="Voir les réalisations 3D">↗</a>
+        </article>
+        <article class="service-row reveal">
+          <span>02</span><h3>Préparation & peinture</h3>
+          <p>Assemblage, masticage, ponçage, apprêt et peinture à la main.</p>
+          <a href="#finitions" aria-label="Voir les finitions">↗</a>
+        </article>
+        <article class="service-row reveal">
+          <span>03</span><h3>Présentation & animation</h3>
+          <p>Concours cosplay, cérémonies, conférences et événements.</p>
+          <a href="#sarah" aria-label="Découvrir Sarah Italina">↗</a>
+        </article>
+        <article class="service-row reveal">
+          <span>04</span><h3>Créations personnalisées</h3>
+          <p>Cornes, cadeaux, signalétique, flocage et porte-clés NFC.</p>
+          <a href="#realisations" aria-label="Voir les créations personnalisées">↗</a>
+        </article>
       </div>
     </section>
 
-    <section class="section section-dark" id="apropos">
-      <div class="container about-grid">
-        <div class="about-panel"><span class="big-if">IF</span><p>Une passerelle entre création, scène et développement de projets.</p></div>
+    <section class="feature feature-dark" id="finitions">
+      <div class="feature-photo reveal"><img src="assets/images/armor.webp" alt="Pièce d'armure fabriquée par Italina Factory" loading="lazy"></div>
+      <div class="feature-copy reveal">
+        <span class="section-label">03 · De l'idée à la pièce</span>
+        <h2>Choisissez votre <em>niveau de finition.</em></h2>
+        <ol class="finish-list">
+          <li><b>Brut</b><span>Pièces imprimées et supports retirés.</span></li>
+          <li><b>Assemblé</b><span>Pièces collées, prêtes pour la suite.</span></li>
+          <li><b>Préparé</b><span>Mastiqué, poncé et apprêté.</span></li>
+          <li><b>Peint</b><span>Finition complète, prête à l'emploi.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="realisations">
+      <div class="gallery-heading">
         <div>
-          <p class="eyebrow">À PROPOS</p>
-          <h2>Une interlocutrice unique, de l’idée à la réalisation</h2>
-          <p>Je suis Sarah, fondatrice d’Italina Factory, cosplayeuse depuis 2012 et présentatrice événementielle. Mon expérience du terrain me permet de comprendre les besoins des créateurs, artistes, exposants et organisateurs.</p>
-          <p>Mon objectif : proposer des solutions accessibles, concrètes et adaptées, tout en apportant un accompagnement humain à chaque étape.</p>
-          <div class="stats"><div><strong>2012</strong><span>Début dans le cosplay</span></div><div><strong>Sur mesure</strong><span>Chaque projet est étudié</span></div><div><strong>France & Belgique</strong><span>Déplacements possibles</span></div></div>
+          <div class="section-label reveal">04 · Sélection</div>
+          <h2 class="reveal">Des créations<br><em>sans frontières.</em></h2>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filtrer la galerie">
+          <button class="active" data-filter="all">Tout</button>
+          <button data-filter="3d">Impression 3D</button>
+          <button data-filter="horns">Cornes</button>
+          <button data-filter="nfc">NFC</button>
+          <button data-filter="cosplay">Cosplay</button>
+        </div>
+      </div>
+      <div class="masonry">
+        <figure class="gallery-item tall reveal" data-category="3d"><img src="assets/images/bust.webp" alt="Buste imprimé et peint" loading="lazy"><figcaption><b>Création 3D</b><span>Peinture complète</span></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/guitar.webp" alt="Guitare rouge imprimée en 3D" loading="lazy"><figcaption><b>Accessoire</b><span>Impression 3D</span></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="horns"><img src="assets/images/horns-red.webp" alt="Cornes rouges personnalisées" loading="lazy"><figcaption><b>Vilainous</b><span>Cornes légères</span></figcaption></figure>
+        <figure class="gallery-item wide reveal" data-category="3d"><img src="assets/images/helmet-set.webp" alt="Casque et accessoires fantasy" loading="lazy"><figcaption><b>Set fantasy</b><span>Fabrication sur mesure</span></figcaption></figure>
+        <figure class="gallery-item tall reveal" data-category="cosplay"><img src="assets/images/cosplay-wolf.webp" alt="Cosplay louve fantasy" loading="lazy"><figcaption><b>Cosplay</b><span>Univers fantasy</span></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="nfc"><img src="assets/images/nfc-products.webp" alt="Porte-clés NFC personnalisés" loading="lazy"><figcaption><b>NFC</b><span>Contact instantané</span></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/purple-sword.webp" alt="Épée lumineuse violette" loading="lazy"><figcaption><b>Prop lumineux</b><span>Accessoire cosplay</span></figcaption></figure>
+        <figure class="gallery-item tall reveal" data-category="horns"><img src="assets/images/horns-model.webp" alt="Cornes portées par Sarah Italina" loading="lazy"><figcaption><b>Cornes</b><span>Port confortable</span></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/deer.webp" alt="Figurine décorative de cerf" loading="lazy"><figcaption><b>Décoration</b><span>Peinture artisanale</span></figcaption></figure>
+        <figure class="gallery-item wide reveal" data-category="nfc"><img src="assets/images/nfc-phone.webp" alt="Utilisation d'un porte-clés NFC avec un téléphone" loading="lazy"><figcaption><b>NFC</b><span>Un geste, un lien</span></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="cosplay"><img src="assets/images/cosplay-armor.webp" alt="Cosplay en armure" loading="lazy"><figcaption><b>Cosplay</b><span>Création & passion</span></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="3d"><img src="assets/images/mask.webp" alt="Masque imprimé et peint" loading="lazy"><figcaption><b>Masque</b><span>Finition complète</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="nfc-section">
+      <video autoplay muted loop playsinline poster="assets/images/nfc-products.webp">
+        <source src="assets/video/nfc-demo.mp4" type="video/mp4">
+      </video>
+      <div class="nfc-overlay"></div>
+      <div class="nfc-copy reveal">
+        <span class="section-label">05 · Porte-clés NFC</span>
+        <h2>Un simple contact.<br><em>Des possibilités infinies.</em></h2>
+        <p>Réseaux sociaux, portfolio, Wi-Fi, contact, menu ou formulaire : partagez l'essentiel en approchant simplement un smartphone.</p>
+        <a class="button gold" href="#contact">Créer le mien</a>
+      </div>
+    </section>
+
+    <section class="sarah-section section" id="sarah">
+      <div class="sarah-collage reveal">
+        <img class="sarah-main" src="assets/images/sarah-blue.webp" alt="Sarah Italina présentant un événement" loading="lazy">
+        <img class="sarah-side" src="assets/images/hero-crowd.webp" alt="Sarah Italina devant un public" loading="lazy">
+      </div>
+      <div class="sarah-copy reveal">
+        <span class="section-label">06 · La fondatrice</span>
+        <h2>Sarah<br><em>Italina.</em></h2>
+        <p class="large">Cosplayeuse depuis plus de 15 ans, présentatrice événementielle et créatrice.</p>
+        <p>Son expérience de la scène et de la fabrication lui permet de comprendre aussi bien les contraintes techniques d'un projet que la manière de le présenter et de le faire vivre.</p>
+        <div class="sarah-links">
+          <a href="https://www.instagram.com/sarahitalina/" target="_blank" rel="noopener">@sarahitalina ↗</a>
+          <a href="mailto:italinafactory@gmail.com">italinafactory@gmail.com ↗</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="realisations">
-      <div class="container">
-        <p class="eyebrow">RÉALISATIONS</p><h2>Des créations aussi uniques que vos univers</h2>
-        <div class="gallery-grid">
-          <div class="gallery-placeholder"><span>01</span><strong>Accessoires cosplay</strong><small>Ajoutez ici une photo de vos cornes ou armures</small></div>
-          <div class="gallery-placeholder tall"><span>02</span><strong>Impression 3D</strong><small>Pièces brutes, préparées ou peintes</small></div>
-          <div class="gallery-placeholder"><span>03</span><strong>Événementiel</strong><small>Scène, concours, ateliers et présentation</small></div>
-          <div class="gallery-placeholder"><span>04</span><strong>Objets NFC</strong><small>Personnalisation et petites séries</small></div>
-        </div>
-        <p class="gallery-note">Les emplacements sont prêts à recevoir tes propres photos sans modifier la mise en page.</p>
-      </div>
+    <section class="quote-section">
+      <p class="reveal">« Chaque projet est unique.<br><em>Chaque création raconte une histoire.</em> »</p>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div><p class="eyebrow">CONTACT</p><h2>Un projet en tête ? Parlons-en.</h2><p>Expliquez votre besoin, les dimensions ou quantités souhaitées, votre délai et, pour l’impression 3D, joignez votre fichier ou un lien vers le modèle.</p>
-          <div class="contact-details"><a href="mailto:italinafactory@gmail.com">italinafactory@gmail.com</a><a href="tel:+33638657868">06 38 65 78 68</a><span>Tourcoing · Hauts-de-France</span></div>
+    <section class="contact-section section" id="contact">
+      <div class="contact-title reveal">
+        <span class="section-label">07 · Votre projet</span>
+        <h2>Et si votre idée devenait <em>réelle ?</em></h2>
+      </div>
+      <div class="contact-card reveal">
+        <p>Expliquez votre besoin, les dimensions souhaitées, votre délai et votre budget. Ajoutez des images de référence lorsque c'est possible.</p>
+        <div class="contact-buttons">
+          <a class="button gold" href="mailto:italinafactory@gmail.com?subject=Demande%20de%20devis%20-%20Italina%20Factory&body=Bonjour%2C%0A%0AJe%20souhaite%20vous%20parler%20du%20projet%20suivant%20%3A%0A%0ADimensions%20%3A%0AD%C3%A9lai%20%3A%0ABudget%20indicatif%20%3A%0A%0AMerci.">Demander un devis</a>
+          <a class="button ghost" href="https://www.instagram.com/italinafactory/" target="_blank" rel="noopener">Écrire sur Instagram</a>
         </div>
-        <form class="contact-form" action="mailto:italinafactory@gmail.com" method="post" enctype="text/plain">
-          <label>Nom / entreprise<input type="text" name="Nom" required></label>
-          <label>Adresse e-mail<input type="email" name="Email" required></label>
-          <label>Service recherché<select name="Service"><option>Impression 3D</option><option>Accessoires / cosplay</option><option>Porte-clés NFC</option><option>Présentation événementielle</option><option>Agent / apport d’affaires</option><option>Autre projet</option></select></label>
-          <label>Votre message<textarea name="Message" rows="5" required></textarea></label>
-          <button class="button primary" type="submit">Envoyer la demande</button>
-          <small>Ce formulaire ouvre votre application de messagerie. Aucun renseignement n’est stocké sur le site.</small>
-        </form>
+        <div class="contact-details">
+          <span>Tourcoing · Hauts-de-France</span>
+          <span>Sur devis · France & Belgique</span>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><div class="brand footer-brand"><span class="brand-mark">IF</span><span><strong>ITALINA</strong><small>FACTORY</small></span></div><p>Création · Cosplay · Événementiel</p><div class="footer-links"><a href="mentions-legales.html">Mentions légales</a><a href="politique-confidentialite.html">Confidentialité</a></div></div><div class="container copyright">© <span id="year"></span> Italina Factory. Tous droits réservés.</div></footer>
-  <script src="assets/script.js"></script>
+  <footer>
+    <a class="footer-brand" href="#top"><img src="assets/images/logo.webp" alt="Italina Factory"><span>ITALINA <b>FACTORY</b></span></a>
+    <div class="footer-links">
+      <a href="#services">Services</a><a href="#realisations">Réalisations</a><a href="#contact">Contact</a>
+    </div>
+    <p>© <span id="year"></span> Italina Factory</p>
+  </footer>
+
+  <dialog class="lightbox">
+    <button class="lightbox-close" aria-label="Fermer">×</button>
+    <img src="" alt="">
+    <div class="lightbox-caption"></div>
+  </dialog>
+  <script src="script.js"></script>
 </body>
 </html>
